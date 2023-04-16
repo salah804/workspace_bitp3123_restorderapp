@@ -1,0 +1,5 @@
+package my.edu.utem.ftmf.dad.restorderapp;
+
+public class OrderTypeRESTController {
+
+}

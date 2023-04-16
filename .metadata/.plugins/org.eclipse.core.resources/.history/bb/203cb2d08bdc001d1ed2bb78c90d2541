@@ -1,0 +1,34 @@
+package my.edu.utem.ftmk.dad.restorderapp.model;
+
+import jakarta.persistence.GenerationType;
+
+@Entity
+@Table(name = "ordertype")
+@Id
+@GeneratedValue(strategy=GenerationType.IDENTITY)
+@Column (name="orderTypeId")
+
+public class OrderType {
+private int orderTypeId;
+private String code;
+private String name;
+public int getOrderTypeId() {
+	return orderTypeId;
+}
+public void setOrderTypeId(int orderTypeId) {
+	this.orderTypeId = orderTypeId;
+}
+public String getCode() {
+	return code;
+}
+public void setCode(String code) {
+	this.code = code;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+
+}
